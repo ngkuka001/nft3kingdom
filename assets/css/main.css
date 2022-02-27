@@ -1,103 +1,296 @@
-
 /* VIDEO */
 
 .video .video__container {
-	position: relative;
-	padding-bottom: 56.25%; /* 16:9 */
-	height: 0;
-}
-.video .video__container iframe {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
-
-/* GAMEPLAY */
-.gameplay .gameplay__flex {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+  }
+  .video .video__container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* GAMEPLAY */
+  .gameplay .gameplay__flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin-left: -10px;
-}
-
-.gameplay .gameplay__col {
+  }
+  
+  .gameplay .gameplay__col {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-left: 10px;
-}
-
-.gameplay .gameplay__col--video {
+  }
+  
+  .gameplay .gameplay__col--video {
     width: calc(30% - 10px);
     margin-left: 10px;
-}
-
-.gameplay .gameplay__col--info {
+  }
+  
+  .gameplay .gameplay__col--info {
     width: calc(70% - 10px);
     margin-left: 10px;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-align: center;
-}
-
-.gameplay .gameplay__text-wrapper {
+  }
+  
+  .gameplay .gameplay__text-wrapper {
     margin-top: 10px;
     padding: 0 50px;
-}
-
-.gameplay .gameplay__text-wrapper p {
+  }
+  
+  .gameplay .gameplay__text-wrapper p {
     color: #fff;
     font-size: 18px;
-}
-
-.gameplay .gameplay__info-wrapper img {
+  }
+  
+  .gameplay .gameplay__info-wrapper img {
     width: auto !important;
-}
-
-@media screen and (max-width: 539px) {
+  }
+  
+  @media screen and (max-width: 539px) {
     .gameplay .gameplay__flex {
-        flex-direction: column;
-        align-items: center;
-        margin-left: 0;
-        position: relative;
-        margin-top: 140px;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      margin-left: 0;
+      position: relative;
+      margin-top: 140px;
     }
-
+  
     .gameplay .gameplay__col {
-        width: 100%;
-        margin-left: 0;
+      width: 100%;
+      margin-left: 0;
     }
-
+  
     .gameplay .gameplay__col:first-child {
-        margin-bottom: 30px;
-        width: 70% !important;
+      margin-bottom: 30px;
+      width: 70% !important;
     }
-
+  
     .gameplay__title {
-        position: absolute;
-        top: -140px;
+      position: absolute;
+      top: -140px;
     }
-}
-
-/* PLAY TO EARN */
-.earn .earn__container {
+  }
+  
+  /* PLAY TO EARN */
+  .earn .earn__container {
     width: 100%;
     padding-top: 50px;
-}
-
-.earn .earn__content {
+  }
+  
+  .earn .earn__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-align: center;
-}
-
-.earn .earn__content img+div {
+  }
+  
+  .earn .earn__content img + div {
     margin: 20px;
     width: 70%;
-}
-
-.earn .earn__content p {
+  }
+  
+  .earn .earn__content p {
     color: #fff;
     font-size: 18px;
-}
+  }
+  
+  /* NFT COLLECTION */
+  .nft-collection .nft-collection__container {
+    width: 100%;
+    padding-top: 50px;
+  }
+
+  .nft-collection .see-more {
+      background-color: #FBCE40;
+      text-transform: uppercase;
+      border-radius: 3px;
+      outline: none;
+      border: none;
+      padding: 14px 40px;
+      font-weight: 700;
+      margin-top: 60px;
+  }
+  
+  .nft-collection .nft-collection__flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  
+  .nft-collection .nft-collection__item-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: -20px;
+  }
+  
+  .nft-collection .nft-collection__item-wrapper div {
+    width: 250px;
+    height: 250px;
+    background-color: #666666;
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+  
+  .nft-collection .nft-collection__item-small {
+    width: 200px !important;
+    height: 200px !important;
+  }
+
+  @media screen and (max-width: 539px) {
+    .nft-collection .nft-collection__item-wrapper {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      margin-left: -15px;
+    }
+  
+    .nft-collection .nft-collection__item-wrapper div {
+      width: 200px;
+      height: 200px;
+      margin-left: 15px;
+      margin-top: 15px;
+    }
+
+    .nft-collection .nft-collection__item-small {
+        width: 150px !important;
+      height: 150px !important;
+    }
+  }
+  
+  /* TOKENNOMICS */
+  .tokennomics .tokennomics__flex {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      margin-bottom: 30px;
+  }
+  
+  /* ROADMAP */
+  .roadmap {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      padding-top: 0;
+  }
+  
+  .roadmap .roadmap__flex {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      margin-bottom: 30px;
+  }
+  
+  /* OUR TEAM */ 
+  
+  .our-team .our-team__flex {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      margin-bottom: 80px;
+  }
+  
+  /* PARTNERS */
+  .partners .partners__flex {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      margin-bottom: 50px;
+  }
+  
+  /* FAQS */
+  .faqs .faqs__flex {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      margin-bottom: 50px;
+  }
+  
+  /* CONTACT US */
+  .contact .contact__flex {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      margin-bottom: 40px;
+  }
+
+  /* MODAL */
+  .custom-modal-dialog-centered {
+    max-width: 768px !important;
+  }
+
+  .custom-modal-dialog-centered .ath-container {
+    width: 768px;
+  }
