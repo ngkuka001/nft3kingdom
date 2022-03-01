@@ -1398,7 +1398,7 @@ h6,
 }
 
 .tc-light-alt a:not(.btn):not([class*="link-"]) {
-  color: #97afd5 !important;
+  color: #fff0e7 !important !important;
 }
 
 .tc-light-alt a:not(.btn):not([class*="link-"]):hover {
@@ -1597,6 +1597,10 @@ h6,
   background-color: rgba(0, 0, 0, 0.22);
 }
 
+.bg-main {
+  background-color: #b69979;
+}
+
 .bg-white {
   background-color: #fff;
 }
@@ -1626,7 +1630,7 @@ h6,
 }
 
 .bg-theme {
-  background-color: #0f1932 !important;
+  background-color: #b69979 !important;
 }
 
 .bg-theme.current {
@@ -3407,14 +3411,14 @@ hr {
   top: 15%;
   left: -4%;
   width: 100px;
-  background-image: url(../images/ui-shape-a.svg);
+  background-image: url(../images/ui-shape-zinnia-a.svg);
 }
 
 .ui-shape:after {
   bottom: 10%;
   right: -4%;
   width: 90px;
-  background-image: url(../images/ui-shape-b.svg);
+  background-image: url(../images/ui-shape-zinnia-b.svg);
 }
 
 .ui-shape-light:before {
@@ -4589,13 +4593,13 @@ hr {
   background-image: linear-gradient(to right, #d31e40 0%, #f42f54 100%);
 }
 
-.btn-grad-theme {
+/* .btn-grad-theme {
   background-image: linear-gradient(to right, #0f1932 0%, #202b47 100%);
 }
 
 .btn-grad-theme:before {
   background-image: linear-gradient(to right, #202b47 0%, #0f1932 100%);
-}
+} */
 
 .btn-grad-theme-alt {
   background-image: linear-gradient(to right, #f8aa38 0%, #f42f54 100%);
@@ -6493,7 +6497,7 @@ select ~ .error:after {
 
 input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
-  color: rgba(48, 80, 130, 0.6);
+  color: #fff;
 }
 
 .tc-light .bg-light input::-webkit-input-placeholder,
@@ -6755,10 +6759,10 @@ textarea:-moz-placeholder {
   transition: all 0.4s;
 }
 
-.tc-light .input-line {
+/* .tc-light .input-line {
   color: #fff;
   border-bottom-color: rgba(219, 228, 247, 0.3);
-}
+} */
 
 .input-line:focus {
   border-bottom-color: #f42f54;
@@ -18635,7 +18639,7 @@ hr + .nk-block {
 }
 
 .has-fixed.is-dark .header-main {
-  background: #0a1227;
+  background: #b69979;
 }
 
 .has-fixed.is-shrink .header-main {
